@@ -553,7 +553,7 @@ int httpRequestSendWithCurl
   {
     url = ip;
   }
-  url = protocol + url + ":" + portAsString + (resource.at(0) == '/'? "" : "/") + resource;
+  url = protocol + url + ":" + portAsString + resource; //+ (resource.at(0) == '/'? "" : "/")
 
   if (insecureNotif)
   {
